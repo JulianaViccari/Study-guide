@@ -1,0 +1,12 @@
+<%# 'Isto é um comentario%>
+<h1>Boas-vindas à Study Guide!</h1>
+<h3>Sua lista de tarefas:</h3>
+<em>Criada em <%= Date.today %></em><br>
+
+<% @tasks.each do |task| %>
+<%= task.description %><br>
+<% end %>
+
+<% @users.each do |user| %>
+<%= user.name %><br>
+<% end %>
